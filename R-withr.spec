@@ -4,14 +4,22 @@
 #
 Name     : R-withr
 Version  : 1.0.1
-Release  : 10
+Release  : 11
 URL      : https://cran.r-project.org/src/contrib/withr_1.0.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/withr_1.0.1.tar.gz
 Summary  : Run Code 'With' Temporarily Modified Global State
 Group    : Development/Tools
 License  : GPL-2.0+
-Requires: R-testthat
-BuildRequires : R-testthat
+Requires: R-R6
+Requires: R-crayon
+Requires: R-memoise
+Requires: R-digest
+Requires: R-magrittr
+BuildRequires : R-R6
+BuildRequires : R-crayon
+BuildRequires : R-digest
+BuildRequires : R-magrittr
+BuildRequires : R-memoise
 BuildRequires : clr-R-helpers
 
 %description
@@ -28,6 +36,8 @@ Withr - Run Code 'With' Modified State
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -36,6 +46,7 @@ mkdir -p %{buildroot}/usr/lib64/R/library
 R CMD INSTALL --install-tests --build  -l %{buildroot}/usr/lib64/R/library withr
 %{__rm} -rf %{buildroot}%{_datadir}/R/library/R.css
 %check
+export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
