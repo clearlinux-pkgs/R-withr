@@ -4,7 +4,7 @@
 #
 Name     : R-withr
 Version  : 1.0.2
-Release  : 18
+Release  : 19
 URL      : https://cran.r-project.org/src/contrib/withr_1.0.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/withr_1.0.2.tar.gz
 Summary  : Run Code 'With' Temporarily Modified Global State
@@ -21,12 +21,15 @@ Withr - Run Code 'With' Modified State
 %setup -q -c -n withr
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1484550819
+export SOURCE_DATE_EPOCH=1492798805
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1484550819
+export SOURCE_DATE_EPOCH=1492798805
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -42,7 +45,7 @@ R CMD INSTALL --install-tests --built-timestamp=${SOURCE_DATE_EPOCH} --build  -l
 export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
 R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library withr
 
@@ -52,6 +55,7 @@ R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/lib
 /usr/lib64/R/library/withr/DESCRIPTION
 /usr/lib64/R/library/withr/INDEX
 /usr/lib64/R/library/withr/Meta/Rd.rds
+/usr/lib64/R/library/withr/Meta/features.rds
 /usr/lib64/R/library/withr/Meta/hsearch.rds
 /usr/lib64/R/library/withr/Meta/links.rds
 /usr/lib64/R/library/withr/Meta/nsInfo.rds
