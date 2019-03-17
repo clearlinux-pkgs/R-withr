@@ -1,10 +1,18 @@
 # This file contains recursive sources that require this package
+R-DBI
 R-DBItest
 R-analogue
 R-caret
 R-crayon
 R-dendextend
+R-desc
+R-fs
 R-ggplot2
+R-gridExtra
+R-hms
+R-httr
+R-hunspell
+R-ini
 R-pkgbuild
 R-pkgdown
 R-pkgload
@@ -12,8 +20,9 @@ R-rcmdcheck
 R-recipes
 R-reprex
 R-rlang
-R-rprojroot
+R-rmarkdown
 R-rstan
 R-sessioninfo
+R-shiny
 R-styler
 R-tibble

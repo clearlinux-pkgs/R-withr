@@ -4,16 +4,12 @@
 #
 Name     : R-withr
 Version  : 2.1.2
-Release  : 47
+Release  : 48
 URL      : https://cran.r-project.org/src/contrib/withr_2.1.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/withr_2.1.2.tar.gz
 Summary  : Run Code 'With' Temporarily Modified Global State
 Group    : Development/Tools
 License  : GPL-2.0+
-Requires: R-DBI
-Requires: R-assertthat
-Requires: R-markdown
-Requires: R-mime
 BuildRequires : R-DBI
 BuildRequires : R-assertthat
 BuildRequires : R-markdown
@@ -39,10 +35,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552804290
+export SOURCE_DATE_EPOCH=1552834358
 
 %install
-export SOURCE_DATE_EPOCH=1552804290
+export SOURCE_DATE_EPOCH=1552834358
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
