@@ -4,7 +4,7 @@
 #
 Name     : R-withr
 Version  : 2.2.0
-Release  : 58
+Release  : 59
 URL      : https://cran.r-project.org/src/contrib/withr_2.2.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/withr_2.2.0.tar.gz
 Summary  : Run Code 'With' Temporarily Modified Global State
@@ -27,10 +27,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1588306667
+export SOURCE_DATE_EPOCH=1589508968
 
 %install
-export SOURCE_DATE_EPOCH=1588306667
+export SOURCE_DATE_EPOCH=1589508968
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "

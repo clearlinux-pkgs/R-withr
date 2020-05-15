@@ -3,9 +3,7 @@ R-DBItest
 R-RANN
 R-caret
 R-covr
-R-crayon
 R-cyclocomp
-R-dcurver
 R-devtools
 R-generics
 R-ggplot2
@@ -25,7 +23,4 @@ R-rhub
 R-sessioninfo
 R-styler
 R-testthat
-R-tibble
-R-treatSens
 R-usethis
-R-zeallot
