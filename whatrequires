@@ -1,16 +1,12 @@
 # This file contains recursive sources that require this package
 R-DBItest
-R-RANN
 R-caret
 R-covr
 R-cyclocomp
+R-dbplyr
 R-devtools
-R-generics
 R-ggplot2
 R-ggridges
-R-ini
-R-packrat
-R-parsedate
 R-pkgbuild
 R-pkgdown
 R-pkgload
@@ -18,9 +14,9 @@ R-pkgmaker
 R-rcmdcheck
 R-recipes
 R-reprex
-R-rgenoud
 R-rhub
 R-sessioninfo
+R-shiny
 R-styler
 R-testthat
 R-usethis
