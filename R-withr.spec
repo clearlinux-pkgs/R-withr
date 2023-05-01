@@ -4,7 +4,7 @@
 #
 Name     : R-withr
 Version  : 2.5.0
-Release  : 82
+Release  : 83
 URL      : https://cran.r-project.org/src/contrib/withr_2.5.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/withr_2.5.0.tar.gz
 Summary  : Run Code 'With' Temporarily Modified Global State
