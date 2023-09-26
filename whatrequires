@@ -1,17 +1,22 @@
 # This file contains recursive sources that require this package
 R-DBItest
+R-DescTools
 R-batchtools
 R-caret
 R-covr
 R-cyclocomp
 R-dbplyr
 R-devtools
+R-dials
+R-downlit
 R-gargle
 R-ggplot2
+R-ggrepel
 R-ggridges
 R-googledrive
-R-mice
-R-pkgbuild
+R-googlesheets4
+R-httr2
+R-mockr
 R-pkgdown
 R-pkgload
 R-pkgmaker
@@ -20,9 +25,12 @@ R-recipes
 R-reprex
 R-reticulate
 R-rhub
+R-roxygen2
+R-rvest
 R-shiny
 R-styler
 R-testthat
 R-themis
+R-tidyselect
 R-usethis
 R-vroom
