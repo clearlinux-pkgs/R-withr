@@ -1,5 +1,5 @@
 PKG_NAME := R-withr
-URL = https://cran.r-project.org/src/contrib/withr_3.0.1.tar.gz
+URL = https://ftp.osuosl.org/pub/cran/src/contrib/withr_3.0.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

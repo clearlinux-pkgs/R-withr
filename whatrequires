@@ -9,6 +9,7 @@ R-dbplyr
 R-devtools
 R-dials
 R-downlit
+R-forecast
 R-gargle
 R-ggplot2
 R-ggrepel
@@ -24,9 +25,7 @@ R-rcmdcheck
 R-recipes
 R-reprex
 R-reticulate
-R-rhub
 R-roxygen2
-R-rvest
 R-shiny
 R-styler
 R-testthat
